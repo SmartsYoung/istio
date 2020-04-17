@@ -116,6 +116,7 @@ func TestFlags(t *testing.T) {
 // TODO we may be able to do more validation of fields here, but because it changes based on the environment this is not easy
 // For now ensuring the fields even get populated is most important.
 func validateField(t *testing.T, field, s string) {
+	// test prow
 	t.Helper()
 	if s == "unknown" || s == "" {
 		t.Errorf("Field %v was invalid. Got: %v.", field, s)
